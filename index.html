@@ -146,12 +146,16 @@
             <!-- Right Half Background Image -->
             <div class="absolute top-0 right-0 w-full md:w-[65%] h-full z-0 overflow-hidden">
                 <!-- Image with subtle zoom on hover for a premium feel -->
-                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=2574&auto=format&fit=crop" 
+                <!-- <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=2574&auto=format&fit=crop" 
                     alt="Academic Journal Library" 
-                    class="w-full h-full object-cover object-center transform transition-transform duration-[2000ms] ease-out group-hover:scale-105" />
+                    class="w-full h-full object-cover object-center transform transition-transform duration-[2000ms] ease-out group-hover:scale-105" /> -->
+                <img
+                    src="./public/images/hero-img.jpeg"
+                    alt="Academic Journal Library"
+                    class="w-full h-full object-cover object-[55%_center] transition-transform duration-[2000ms] ease-out group-hover:scale-105"/>
                 
                 <!-- Mobile fade -->
-                <div class="absolute inset-0 bg-brand-cardgray/90 md:hidden backdrop-blur-sm"></div>
+                <div class="absolute inset-0 md:hidden bg-gradient-to-b from-brand-cardgray/80 via-brand-cardgray/45 to-brand-cardgray/20"></div>
                 
                 <!-- Desktop gradient overlay over the image to enrich shadows -->
                 <div class="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-dark/40 to-transparent mix-blend-overlay"></div>
@@ -170,38 +174,34 @@
                 <div class="w-full md:w-[55%] lg:w-[50%] md:pr-10 space-y-7">
                     
                     <!-- Main Headline (Polished Typography) -->
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.15]">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.15] drop-shadow-md">
                         Multidisciplinary Journal of <span class="text-brand-green block mt-1">Technical University of Mombasa</span>
                     </h1>
                     
                     <!-- Subheadline -->
-                    <p class="text-base md:text-lg text-gray-600 font-sans text-justify leading-relaxed">
+                    <p class="text-base md:text-lg text-gray-600 md:text-gray-600 leading-relaxed drop-shadow">
                         A open-access platform dedicated to publishing high-quality, peer-reviewed research and review articles across engineering, computing, and the built environment.
                     </p>
                     
                     <!-- Call to Actions -->
                     <div class="flex flex-col sm:flex-row items-center gap-4 pt-3">
-                        <a href="#" class="w-full sm:w-auto text-center bg-brand-green hover:bg-[#075f2f] text-white font-bold text-sm uppercase tracking-wider py-4 px-8 rounded shadow-lg shadow-brand-green/30 hover:shadow-brand-green/50 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
+                        <a href="#" class="w-full sm:w-auto text-center bg-brand-green hover:bg-[#075f2f] text-white font-bold text-sm uppercase tracking-wider py-3 px-6 rounded shadow-lg shadow-brand-green/30 hover:shadow-brand-green/50 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
                             <i class="fa fa-book-open"></i> Read Latest Issue
                         </a>
-                        <a href="#" class="w-full sm:w-auto text-center bg-white border border-gray-300 hover:border-brand-gold text-brand-dark hover:text-brand-gold font-bold text-sm uppercase tracking-wider py-4 px-8 rounded shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                        <a href="#" class="w-full sm:w-auto text-center bg-white border border-gray-300 hover:border-brand-gold text-brand-dark hover:text-brand-gold font-bold text-sm uppercase tracking-wider py-3 px-6 rounded shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                             Submit Manuscript <i class="fa fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
                         </a>
                     </div>
                     
                     <!-- Quick Meta Stats & DOI (Modern Pills) -->
                     <div class="flex flex-wrap items-center gap-3 pt-6 border-t border-gray-200 mt-4">
-                        <span class="bg-brand-green/10 text-brand-green border border-brand-green/20 px-3 py-1.5 rounded text-xs font-bold flex items-center gap-1.5">
-                            <i class="fa-solid fa-unlock-keyhole"></i> Open Access
-                        </span>
                         <span class="bg-white text-gray-600 border border-gray-200 px-3 py-1.5 rounded text-xs font-semibold flex items-center gap-1.5 shadow-sm">
                             <i class="fa-solid fa-barcode text-gray-400"></i> ISSN: 2788-9068
                         </span>
                         <span class="bg-white text-gray-600 border border-gray-200 px-3 py-1.5 rounded text-xs font-semibold flex items-center gap-1.5 shadow-sm">
                             DOI: <a href="#" class="text-brand-link hover:underline font-bold ml-0.5">10.48039/ek1sj324</a>
                         </span>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
         </div>
@@ -220,7 +220,7 @@
         </div>
 
         <!-- Main Body Grid -->
-        <div class="p-6 md:p-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div class="py-4 md:py-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
             
             <!-- Left Main Content Column -->
             <div class="lg:col-span-8 space-y-12">
@@ -235,7 +235,7 @@
                     <div class="flex flex-col md:flex-row gap-6 items-start bg-brand-lightgray p-6 rounded-lg border border-gray-200">
                         <!-- Issue Cover Image -->
                         <div class="w-full md:w-1/3 flex-shrink-0">
-                            <img src="./hero-img.jpeg" alt="Current Issue Cover" class="w-full shadow-md rounded border border-gray-200">
+                            <img src="./public/images/hero-img.jpeg" alt="Current Issue Cover" class="w-full shadow-md rounded border border-gray-200">
                         </div>
 
                         <!-- Editorial Content -->
@@ -275,7 +275,7 @@
                 <!-- Articles List Section (Formatted with bold numbers) -->
                 <section>
                     <div class="flex items-center justify-between border-b-2 border-brand-green pb-2 mb-8">
-                        <h2 class="text-xl md:text-2xl font-serif font-bold text-gray-900">
+                        <h2 class="text-xm md:text-2xl font-serif font-bold text-gray-900">
                             Published Articles
                         </h2>
                         <span class="text-xs font-bold uppercase text-gray-500">Table of Contents</span>
@@ -286,9 +286,9 @@
 
                             <!-- Article 1 -->
                             <div class="flex gap-4 md:gap-6 items-start">
-                                <span class="text-xl md:text-4xl font-serif font-bold text-brand-green leading-none">1.</span>
+                                <span class="text-xm md:text-4xl font-serif font-bold text-brand-green leading-none">1.</span>
                                 <div class="space-y-2 flex-grow">
-                                    <h3 class="text-lg md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
+                                    <h3 class="text-xm md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
                                         <a href="https://journals.tum.ac.ke/index.php/tummj/article/view/102">Soiling Loss Quantification of Roof-Top Mounted Solar Module in Mombasa Using Digital Imagery Techniques</a>
                                     </h3>
                                     <p class="text-xs md:text-sm text-gray-600 font-medium">
@@ -304,9 +304,9 @@
 
                             <!-- Article 2 -->
                             <div class="flex gap-4 md:gap-6 items-start">
-                                <span class="text-3xl md:text-4xl font-serif font-bold text-brand-green leading-none">2.</span>
+                                <span class="text-xm md:text-4xl font-serif font-bold text-brand-green leading-none">2.</span>
                                 <div class="space-y-2 flex-grow">
-                                    <h3 class="text-lg md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
+                                    <h3 class="text-xm md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
                                         <a href="https://journals.tum.ac.ke/index.php/tummj/article/view/103">Optimization of Tilt, List, and Skew of Sea-to-Shore Gantry Cranes</a>
                                     </h3>
                                     <p class="text-xs md:text-sm text-gray-600 font-medium">
@@ -322,9 +322,9 @@
 
                             <!-- Article 3 -->
                             <div class="flex gap-4 md:gap-6 items-start">
-                                <span class="text-3xl md:text-4xl font-serif font-bold text-brand-green leading-none">3.</span>
+                                <span class="text-xm md:text-4xl font-serif font-bold text-brand-green leading-none">3.</span>
                                 <div class="space-y-2 flex-grow">
-                                    <h3 class="text-lg md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
+                                    <h3 class="text-xm md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
                                         <a href="https://journals.tum.ac.ke/index.php/tummj/article/view/104">A Hybrid Quantum Annealing Algorithm for Solving a Constraint-Based University Timetabling Problem</a>
                                     </h3>
                                     <p class="text-xs md:text-sm text-gray-600 font-medium">
@@ -340,9 +340,9 @@
 
                             <!-- Article 4 -->
                             <div class="flex gap-4 md:gap-6 items-start">
-                                <span class="text-3xl md:text-4xl font-serif font-bold text-brand-green leading-none">4.</span>
+                                <span class="text-xm md:text-4xl font-serif font-bold text-brand-green leading-none">4.</span>
                                 <div class="space-y-2 flex-grow">
-                                    <h3 class="text-lg md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
+                                    <h3 class="text-xm md:text-xm font-serif font-bold text-gray-900 leading-snug hover:text-brand-gold transition-colors">
                                         <a href="https://journals.tum.ac.ke/index.php/tummj/article/view/105">Integrating Quantitative Rigour and Contextual Insight: A Mixed-Methods Paradigm for Strategy-Environment-Performance Research in Emerging Real Estate Markets</a>
                                     </h3>
                                     <p class="text-xs md:text-sm text-gray-600 font-medium">
