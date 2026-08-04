@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJTUM</title>
+    <title>issue - MJTUM</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -64,7 +64,6 @@
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans antialiased">
-
     <!-- Top Utility Bar -->
     <div class="bg-brand-yellow text-white text-xs py-2 px-6">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
@@ -82,7 +81,7 @@
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             
             <!-- Logo -->
-            <a href="#" class="flex-shrink-0 max-w-[280px] md:max-w-[380px]">
+            <a href="/index.html" class="flex-shrink-0 max-w-[280px] md:max-w-[380px]">
                 <img src="https://journals.tum.ac.ke/public/journals/3/pageHeaderLogoImage_en.png" alt="MJTUM LOGO" class="w-full h-auto object-contain" onerror="this.src='https://via.placeholder.com/380x80?text=MULTIDISCIPLINARY+JOURNAL+OF+TUM'">
             </a>
 
@@ -157,98 +156,42 @@
 
     <!-- Content Wrapper -->
     <div class="max-w-6xl mx-auto my-6 overflow-hidden">
-
-        <!-- Banner Header Section -->
-        <div class="relative w-full bg-brand-cardgray overflow-hidden border-b border-gray-200 group">
-            
-            <!-- Right Half Background Image -->
-            <div class="absolute top-0 right-0 w-full md:w-[65%] h-full z-0 overflow-hidden">
-                <!-- Image with subtle zoom on hover for a premium feel -->
-                <!-- <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=2574&auto=format&fit=crop" 
-                    alt="Academic Journal Library" 
-                    class="w-full h-full object-cover object-center transform transition-transform duration-[2000ms] ease-out group-hover:scale-105" /> -->
-                <img
-                    src="./public/images/hero-img.jpeg"
-                    alt="Academic Journal Library"
-                    class="w-full h-full object-cover object-[55%_center] transition-transform duration-[2000ms] ease-out group-hover:scale-105"/>
-                
-                <!-- Mobile fade -->
-                <div class="absolute inset-0 md:hidden bg-gradient-to-b from-brand-cardgray/80 via-brand-cardgray/45 to-brand-cardgray/20"></div>
-                
-                <!-- Desktop gradient overlay over the image to enrich shadows -->
-                <div class="hidden md:block absolute inset-0 bg-gradient-to-r from-brand-dark/40 to-transparent mix-blend-overlay"></div>
-            </div>
-
-            <!-- Desktop Solid Diagonal Mask (Covers the left side and slants down to the right) -->
-            <div class="hidden md:block absolute top-0 left-0 w-[60%] lg:w-[55%] h-full bg-brand-cardgray z-10 [clip-path:polygon(0_0,100%_0,85%_100%,0_100%)] shadow-2xl"></div>
-            
-            <!-- Decorative Gold Accent Line along the slant -->
-            <div class="hidden md:block absolute top-0 left-[60%] lg:left-[55%] w-1.5 h-full bg-brand-gold z-10 -ml-[2px] [clip-path:polygon(0_0,100%_0,0_100%,-100%_100%)] transform -skew-x-[7.5deg] lg:-skew-x-[8.5deg] opacity-90"></div>
-
-            <!-- Content Container -->
-            <div class="max-w-6xl mx-auto px-6 py-8 md:py-12 relative z-20 flex">
-                
-                <!-- Left Column Text & CTAs -->
-                <div class="w-full md:w-[55%] lg:w-[50%] md:pr-10 space-y-7">
-                    
-                    <!-- Main Headline (Polished Typography) -->
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-brand-dark leading-[1.15] drop-shadow-md">
-                        Multidisciplinary Journal of <span class="text-brand-green block mt-1">Technical University of Mombasa</span>
-                    </h1>
-                    
-                    <!-- Subheadline -->
-                    <p class="text-base md:text-lg text-gray-600 md:text-gray-600 leading-relaxed drop-shadow">
-                        A open-access platform dedicated to publishing high-quality, peer-reviewed research and review articles across engineering, computing, and the built environment.
-                    </p>
-                    
-                    <!-- Call to Actions -->
-                    <div class="flex flex-col sm:flex-row items-center gap-4 pt-3">
-                        <a href="#" class="w-full sm:w-auto text-center bg-brand-green hover:bg-[#075f2f] text-white font-bold text-sm uppercase tracking-wider py-3 px-6 rounded shadow-lg shadow-brand-green/30 hover:shadow-brand-green/50 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2">
-                            <i class="fa fa-book-open"></i> Read Latest Issue
-                        </a>
-                        <a href="#" class="w-full sm:w-auto text-center bg-white border border-gray-300 hover:border-brand-gold text-brand-dark hover:text-brand-gold font-bold text-sm uppercase tracking-wider py-3 px-6 rounded shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
-                            Submit Manuscript <i class="fa fa-arrow-right group-hover/btn:translate-x-1 transition-transform"></i>
-                        </a>
-                    </div>
-                    
-                    <!-- Quick Meta Stats & DOI (Modern Pills) -->
-                    <div class="flex flex-wrap items-center gap-3 pt-6 border-t border-gray-200 mt-4">
-                        <span class="bg-white text-gray-600 border border-gray-200 px-3 py-1.5 rounded text-xs font-semibold flex items-center gap-1.5 shadow-sm">
-                            <i class="fa-solid fa-barcode text-gray-400"></i> ISSN: 2788-9068
-                        </span>
-                        <span class="bg-white text-gray-600 border border-gray-200 px-3 py-1.5 rounded text-xs font-semibold flex items-center gap-1.5 shadow-sm">
-                            DOI: <a href="#" class="text-brand-link hover:underline font-bold ml-0.5">10.48039/ek1sj324</a>
-                        </span>
-                    </div>                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Quick Action / Subscribe Bar -->
-        <div class="bg-gray-100 py-3 px-6 border-b border-gray-200 flex flex-wrap items-center justify-between gap-4 text-xs font-bold text-gray-600 uppercase tracking-wider">
-            <div class="flex items-center space-x-2">
-                <span>Journal Access:</span>
-                <span class="bg-green-100 text-brand-green px-2 py-0.5 rounded text-[11px]">Open Access</span>
-            </div>
-            <div class="flex items-center space-x-6">
-                <a href="#" class="hover:text-brand-green flex items-center gap-1"><i class="fa fa-newspaper"></i> Current</a>
-                <a href="#" class="hover:text-brand-green flex items-center gap-1"><i class="fa fa-archive"></i> Archives</a>
-                <a href="#" class="hover:text-brand-green flex items-center gap-1"><i class="fa fa-info-circle"></i> Info</a>
-            </div>
-        </div>
-
-        <!-- Main Body Grid -->
         <div class="py-4 md:py-10 px-4 grid grid-cols-1 lg:grid-cols-12 gap-10">
-            
             <!-- Left Main Content Column -->
             <div class="lg:col-span-8 space-y-12">
 
                 <!-- Featured Section / Editorial Note -->
                 <section>
-                    <h2 class="text-xl md:text-3xl font-serif font-bold text-brand-green mb-4">
-                        A Message from the Editor-in-Chief
-                    </h2>
-                    <p class="text-sm text-gray-600 italic mb-6">Take a look at the editorial insights and research directions incorporated in this issue.</p>
+                    <div class="lg:col-span-8 space-y-12">
+                        <!-- Breadcrumb -->
+                        <nav class="mb-6 text-sm text-gray-500 font-medium" aria-label="Breadcrumb">
+                            <ol class="flex flex-wrap items-center gap-2">
+                                <li>
+                                    <a href="/index.html" class="text-sky-600 hover:text-brand-green transition-colors">
+                                        HOME
+                                    </a>
+                                </li>
+                                <li class="text-gray-400">/</li>
+                                <li>
+                                    <a href="#" class="text-sky-600 hover:text-brand-green transition-colors">
+                                        ARCHIVES
+                                    </a>
+                                </li>
+                                <li class="text-gray-400">/</li>
+                                <li class="text-gray-700">
+                                    Vol. 5 No. 1 (2026): Volume 5 Issue 1 2026
+                                </li>
+                            </ol>
+                        </nav>
+                        <!-- Featured Section -->
+                        <section>
+                            <h2 class="text-xm md:text-xl font-serif font-bold text-brand-green mb-4">
+                                Vol. 5 No. 1 (2026): Volume 5 Issue 1 2026
+                            </h2>
+                            <!-- Rest of your content -->
+                        </section>
+
+                    </div>
 
                     <div class="flex flex-col md:flex-row gap-6 items-start bg-brand-lightgray p-6 rounded-lg border border-gray-200">
                         <!-- Issue Cover Image -->
@@ -382,16 +325,6 @@
                     </div>
                 </section>
 
-                <hr class="border-gray-200">
-
-                <!-- About section -->
-                <section class="bg-brand-lightgray p-6 rounded-lg border border-gray-200">
-                    <h2 class="text-xl font-serif font-bold text-gray-900 mb-3">About the Journal</h2>
-                    <p class="text-sm text-gray-700 leading-relaxed text-justify">
-                        <strong>Multidisciplinary Journal of Technical University of Mombasa (MJTUM)</strong> is the official peer-reviewed journal of Technical University of Mombasa. MJTUM is an open access journal hosted by the Library Department and the office of the Registrar Partnership, Research and Innovation (PRI) at the Technical University of Mombasa ... <a href="#" class="text-brand-link font-semibold hover:underline">Read more</a>
-                    </p>
-                </section>
-
             </div>
 
             <!-- Right Sidebar Column -->
@@ -446,11 +379,8 @@
                 </div>
 
             </div>
-
         </div>
-
     </div>
-
     <!-- Footer -->
     <footer class="bg-brand-dark text-white mt-12 border-t-4 border-brand-gold">
         <div class="max-w-6xl mx-auto py-10 px-6 text-center space-y-4">
@@ -482,6 +412,4 @@
             }
         });
     </script>
-
 </body>
-</html>
